@@ -1,0 +1,132 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Container Styling */
+.container {
+  text-align: left; /* Align content to the left */
+  background: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+  width: 100%;
+  max-width: 400px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #00ffcc;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Display Styling */
+#display {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+/* Button Styling */
+.buttons {
+  display: flex;
+  justify-content: flex-start; /* Align buttons to the left */
+  gap: 10px;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #00ffcc;
+  color: #000;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,255,204,0.4);
+}
+
+button:hover {
+  background-color: #00cc99;
+  transform: translateY(-2px);
+}
+
+#pauseBtn {
+  background-color: #ffcc00;
+}
+
+#pauseBtn:hover {
+  background-color: #ffb300;
+}
+
+#resetBtn {
+  background-color: #ff4d4d;
+}
+
+#resetBtn:hover {
+  background-color: #ff1a1a;
+}
+
+#lapBtn {
+  background-color: #4d94ff;
+}
+
+#lapBtn:hover {
+  background-color: #1a75ff;
+}
+
+/* Lap List Styling */
+#laps {
+  list-style: none;
+  margin-top: 20px;
+  padding: 0;
+  max-height: 150px;
+  overflow-y: auto;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  text-align: left; /* Align lap items to the left */
+}
+
+#laps li {
+  padding: 10px;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 1rem;
+  text-align: left;
+}
+
+#laps li:last-child {
+  border-bottom: none;
+}
+
+/* Scrollbar Styling */
+#laps::-webkit-scrollbar {
+  width: 5px;
+}
+
+#laps::-webkit-scrollbar-thumb {
+  background-color: #00ffcc;
+  border-radius: 10px;
+}
+
+#laps::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.1);
+}
